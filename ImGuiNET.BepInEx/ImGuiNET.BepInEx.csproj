@@ -36,6 +36,19 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Unity.Profiling.Core" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.CoreModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImGuiNET\ImGuiNET.csproj">
+      <Project>{GUID-for-ImGuiNET}</Project>
+      <Name>ImGuiNET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImGuiNET.Unity\ImGuiNET.Unity.csproj">
+      <Project>{GUID-for-Unity}</Project>
+      <Name>ImGuiNET.Unity</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

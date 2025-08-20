@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using ImGuiNET.Unity;
 
 namespace ImGuiNET.Unity.Examples
 {
@@ -90,4 +89,32 @@ namespace ImGuiNET.Unity.Examples
             ImGui.End();
         }
     }
+
+    /// <summary>
+    /// Example usage in a BepInEx plugin class
+    /// Add this component to a GameObject in your scene, or create it dynamically from your BepInEx plugin
+    /// </summary>
+    /*
+    [BepInPlugin("com.example.imguiplugin", "ImGui Example Plugin", "1.0.0")]
+    public class MyBepInExPlugin : BaseUnityPlugin
+    {
+        private GameObject _imguiGameObject;
+
+        void Awake()
+        {
+            // Create a GameObject to hold the ImGui component
+            _imguiGameObject = new GameObject("ImGui BepInEx");
+            DontDestroyOnLoad(_imguiGameObject);
+            
+            // Add the example component
+            _imguiGameObject.AddComponent<ExampleBepInExPlugin>();
+        }
+
+        void OnDestroy()
+        {
+            if (_imguiGameObject != null)
+                Destroy(_imguiGameObject);
+        }
+    }
+    */
 }
