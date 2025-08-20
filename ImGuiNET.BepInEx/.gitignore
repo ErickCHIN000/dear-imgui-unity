@@ -1,0 +1,20 @@
+# Build outputs
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# IDE files
+.vs/
+*.suo
+*.user
+*.csproj.user
+
+# Packages
+packages/
+*.nupkg
+
+# OS files
+Thumbs.db
+.DS_Store
